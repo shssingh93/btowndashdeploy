@@ -188,7 +188,7 @@ def get_orders(request):
     # json_parser = JSONParser()
     # Check if the user exists in database
     cursor = connection.cursor()
-    cursor.execute("SELECT o.source_address, o.source_address, TO_CHAR(o.orderdate, 'MM/DD/YYYY'), u.fullname, d.driver FROM delivery_orders o, delivery_users u, delivery_deliveries d  WHERE o.username = u.username and o.trackingid = d.trackingid")
+    cursor.execute("SELECT o.source_address, o.source_address, TO_CHAR(o.orderdate, 'MM/DD/YYYY'), u.fullname, 'John Doe' FROM delivery_orders o, delivery_users u WHERE o.username = u.username")
     results = cursor.fetchall()
 
     connection.commit()
