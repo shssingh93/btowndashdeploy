@@ -170,7 +170,7 @@ def place_order(request):
 def get_location(request):
     json_parser = JSONParser()
     tracking_data = json_parser.parse(request)
-    trackingId = tracking_data.get('trackingid')
+    trackingId = tracking_data.get('trackingId')
 
     # Check if the user exists in database
     cursor = connection.cursor()
