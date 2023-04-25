@@ -95,11 +95,11 @@ WSGI_APPLICATION = "btowndash_backend.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "deliverymanagement_btowndash",
+        "NAME": "railway",
         "USER": "postgres",
-        "PASSWORD": "shubham93",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
+        "PASSWORD": "bB0LtFeFoUpDSNhaEFhM",
+        "HOST": "containers-us-west-190.railway.app",
+        "PORT": "6979",
     }
 }
 
