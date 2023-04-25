@@ -117,7 +117,7 @@ def reset_password(request):
 
         subject = 'Password Reset Request'
         message = "To reset your password, please use the one time password: "+password+"\n\nIf you did not request a password reset, please ignore this email."
-        from_email = 'sreekavya.shetty@gmail.com'
+        from_email = 'btown.dash.delivery@gmail.com'
         recipient_list = [email]     # ['singh.shubhams1397@gmail.com']
         html_message = "<p>To reset your password, please use the one time password:</p><p>"+password+"</p><p>If you did not request a password reset, please ignore this email.</p>"
         sent = send_mail(subject, message, from_email, recipient_list, html_message=html_message)
